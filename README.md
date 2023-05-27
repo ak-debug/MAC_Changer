@@ -1,40 +1,64 @@
-# MAC_Changer
+# MAC Changer
 
-## **User Guide**
+MAC Changer is a Python script with a graphical user interface (GUI) built using Tkinter. It allows users to change and restore the Media Access Control (MAC) address of a network interface on a Linux system.
 
-The MAC changer is a GUI application built using Python and Tkinter library. It allows you to change the MAC address of a network interface on your computer.
+## Prerequisites
 
-### **Running the Application**
-
-To run the MAC changer, you need to have Python installed on your computer.
-
-1. Open a terminal window or command prompt.
-2. Navigate to the directory where the code is saved.
-3. Run the following command:
-
-```
-sudo python3 code.py
-
-```
-
-where **`<filename>`** is the name of the file you saved the code in.
-
-### **Using the Application**
-
-The MAC changer has a simple and intuitive interface.
-
-1. In the **`Interface`** field, enter the name of the network interface you want to change the MAC address for.
-2. In the **`MAC Address`** field, enter the new MAC address you want to set for the network interface. If you leave this field blank, the application will generate a random MAC address for you.
-3. Click the **`Change`** button to change the MAC address. The result of the operation will be displayed in the text box below.
-4. If you want to restore the original MAC address, click the **`Restore`** button.
-
-### **Requirements**
-
-To run the MAC changer, you need to have the following installed:
-
-- Python 3
+- Python 3.x
 - Tkinter library
+- netifaces library
 
-### **Limitations**
+## Installation
 
-This application is designed to work on Unix-based systems. It may not work on other operating systems. Additionally, changing the MAC address of a network interface may have legal implications and may not be allowed in some countries.
+1. Clone the repository:
+
+   ```
+   git clone https://github.com/your-username/mac-changer.git
+   ```
+
+2. Install the required dependencies:
+
+   ```
+   pip install netifaces
+   ```
+
+## Usage
+
+1. Open a terminal and navigate to the project directory:
+
+   ```
+   cd mac-changer
+   ```
+
+2. Run the script:
+
+   ```
+   python mac_changer.py
+   ```
+
+3. The MAC Changer GUI will appear, allowing you to change and restore MAC addresses.
+
+## Features
+
+- **Change MAC Address**: Enter a custom MAC address or leave it blank to generate a random MAC address. Click the "Change" button to change the MAC address of the selected network interface.
+- **Restore Original MAC**: Click the "Restore" button to restore the original MAC address of the selected network interface.
+- **Automatic MAC Changes**: Enable automatic MAC changes by clicking "File" > "Settings" and selecting the "Enable automatic MAC changes" checkbox. Specify the change interval in seconds and click "Save". The MAC address will be changed automatically at the specified interval.
+- **Result Box**: The result box displays the outcome of MAC address changes and restorations.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and submit a pull request with your improvements or bug fixes.
+
+## Acknowledgments
+
+This script utilizes the netifaces library to fetch network interface information and the subprocess module for executing system commands.
+
+## Disclaimer
+
+Changing MAC addresses without proper authorization may be against the terms of service of your network or system. Use this script responsibly and for educational purposes only.
+
+Feel free to customize and enhance the README to provide more information or instructions specific to your code and its usage.
