@@ -33,7 +33,7 @@ MAC Changer is a Python script with a graphical user interface (GUI) built using
 2. Run the script:
 
    ```
-   python mac_changer.py
+   sudo python mac_changer.py
    ```
 
 3. The MAC Changer GUI will appear, allowing you to change and restore MAC addresses.
